@@ -1,0 +1,17 @@
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"# Nagłówek1"},{"role":"assistant","content":"<h1>Nagłówek1</h1>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"## Nagłówek2"},{"role":"assistant","content":"<h2>Nagłówek2</h2>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"### Nagłówek3"},{"role":"assistant","content":"<h3>Nagłówek3</h3>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"**pogrubienie**"},{"role":"assistant","content":"<span class='bold'>pogrubienie</span>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"*kursywa*"},{"role":"assistant","content":"<em>kursywa</em>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"[AI Devs 3.0](https://aidevs.pl)"},{"role":"assistant","content":"<a href='https://aidevs.pl'>AI Devs 3.0</a>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"_podkreślenie_"},{"role":"assistant","content":"<u>podkreślenie</u>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"1. Element listy\n2. Kolejny elementy"},{"role":"assistant","content":"<ol><li>Element listy</li><li>Kolejny element</li></ol>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"# Heading 1 \n ## Heading 2 \n ### Heading 3"},{"role":"assistant","content":"<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"This is a paragraph."},{"role":"assistant","content":"<p>This is a paragraph.</p>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"*italic*"},{"role":"assistant","content":"<em>italic</em>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"*kursywa kursywa*"},{"role":"assistant","content":"<em>kursywa kursywa</em>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"**masz 20 lat?**"},{"role":"assistant","content":"<span class='bold'>masz 20 lat?</span>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"_tekst_"},{"role":"assistant","content":"<u>tekst</u>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"_tekst tekst_"},{"role":"assistant","content":"<u>tekst tekst</u>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"[onet.pl](https://www.onet.pl)"},{"role":"assistant","content":"<a href='https://www.onet.pl'>onet.pl</a>"}]}
+{"messages":[{"role":"system","content":"tryb zdzis\u0142awa"},{"role":"user","content":"Wirtualna Polska (https://wp.pl)"},{"role":"assistant","content":"<a href='https://wp.pl'>Wirtualna Polska</a>"}]}
