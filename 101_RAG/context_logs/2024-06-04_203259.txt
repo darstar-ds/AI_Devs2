@@ -1,0 +1,79 @@
+Zatrzymaj się teraz na chwilę nad powyższymi punktami.
+
+Uwzględniłem w nich szereg istotnych zagadnień, które będą pojawiać się na przestrzeni wszystkich przyszłych lekcji.
+
+Jeśli niektóre z nich na tym etapie nie są dla Ciebie jasne, to prawdopodobnie zmieni się to nieco później.
+
+Daj sobie jednak przestrzeń do zapoznania się z nimi.
+
+Mamy już wystarczająco dużo wiedzy na temat samych modeli, jednak zanim przejdziemy do kolejnych lekcji, chciałbym zatrzymać się na moment na narzędziu Playground, a konkretnie jego ustawieniach.
+
+Aktualnie praktycznie w 100% przypadków, będziesz korzystać z trybu "Chat" i to na nim skupimy swoją uwagę.
+
+! Z drugiej strony, ustawienie tego wskaźnika wysoko **nie jest związane z faktyczną długością generowanej odpowiedzi**.
+
+!
+
+*   **Stop sequences:** Możesz tutaj przekazać ciągi znaków, które spowodują **zatrzymanie generowania odpowiedzi** (one same nie zostaną uwzględnione w odpowiedzi).
+
+Mowa tutaj np.
+
+o znakach nowej linii czy nawet konkretnych słowach.
+
+Warto zachować ostrożność przy dobieraniu takich sekwencji, aby przypadkowo nie zatrzymać odpowiedzi wcześniej, niż tego potrzebujemy.
+
+Przykładem w którym sam korzystałem z tej opcji, była praca z fine-tuningowanym modelem (fine-tuning to proces wyspecjalizowania modelu do realizacji konkretnych zadań), którego dane treningowe uwzględniały "stop sequence" w postaci np. "
+
+-->".
+
+Wówczas wiedziałem, że pojawienie się takiej sekwencji zawsze powinno zakończyć generowanie odpowiedzi.
+
+! za pomocą wyrażeń regularnych.
+
+Np.
+
+pracę z różnymi językami równolegle.
+
+*   **Odpowiadanie na pytania i generowanie treści** na podstawie danych przekazanych jako kontekst zapytania, czyli tzw.
+
+Retrieval-Augmented Generation o którym będziemy jeszcze mówić.
+
+*   **Zadania związane z programowaniem** uwzględniają tworzenie, modyfikowanie, wyjaśnianie, oraz debugowanie kodu (tutaj pomocne są także modele “Vision” umożliwiające pracę z obrazami).
+
+*   **Integracja z kodem aplikacji** i zastosowanie biznesowe czynią LLM użytecznymi narzędziami, które pozwalają realizować zadania związane z przetwarzaniem języka naturalnego (eng.
+
+Natural Language Processing, NLP).
+
+*   **Posługiwanie się API**, w szczególności w kontekście , oraz wersji modeli OpenAI wyspecjalizowanych w wyborze funkcji i generowaniu do nich parametrów. !
+
+Wszystko to prowadzi nas do prostego wniosku, mówiącego o tym, że warto projektować swoje systemy tak, aby pracowały na możliwie małym zestawie informacji **istotnych dla bieżącego zadania**.
+
+Przykład poniżej pokazuje, jak nieprawidłowe dobranie kontekstu sprawiło, że model nie był w stanie udzielić poprawnej odpowiedzi na pytanie (ale jego zachowanie jest zgodne z instrukcją).
+
+!
+
+🔗
+Wątek pracy z tokenami i długim kontekstem (np.
+
+prowadzeniem długich rozmów czy przetwarzaniem długich dokumentów) będziemy jeszcze poruszać wielokrotnie w kolejnych lekcjach.
+
+Na razie zapamiętaj jedynie, że zwykle **warto utrzymywać kontekst tak krótkim, jak to możliwe**, o ile nie tracimy jego sensu.
+
+**Niedeterministyczna natura**
+Do prezentowanych przykładów zadań realizowanych przez GPT-4 dołączam linki kierujące do Playground.
+
+Jeśli z nich skorzystasz, to prawdopodobnie zauważysz, że przy **ponownych próbach wykonywania dokładnie tych samych instrukcji, wynik może ulegać zmianie**. Takie sytuacje mogą mieć miejsce nawet dla stosunkowo prostych dla człowieka zadań, których przełożenie na kod nie jest oczywiste.
+
+Przykładem może być **rozpoznawanie obiektów, dźwięków** czy **posługiwanie się naturalnym językiem (NLP — natural language processing)**.
+
+Uwzględnienie wszystkich zmiennych biorących udział w takich procesach **wymaga zaprojektowania matematycznego modelu reprezentującego ich realizację w uproszczony sposób**.
+
+Aby Ci to lepiej zobrazować, przygotowałem prosty kod JavaScript (), który rysuje wykres funkcji falowej.
+
+W tym przypadku znamy dokładnie zasady rysowania takiego wykresu i jesteśmy w stanie rysować jego kolejne fragmenty poprzez **obliczanie kolejnych punktów**.
+
+!
+
+Zakładając jednak, że nie znamy tych zasad, musielibyśmy zaprojektować model, który w uproszczony sposób realizowałby zadanie polegające na rysowaniu wykresu.
+
+Początkowo **jego parametry** byłyby raczej losowe i taki też byłby wynik jego działania.

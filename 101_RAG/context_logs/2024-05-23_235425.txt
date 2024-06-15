@@ -1,0 +1,145 @@
+
+Oto lista źródeł wiedzy oraz profili, które mogę Ci polecić. Pozostawanie na bieżąco oraz docieranie do najlepszych możliwych źródeł wiedzy jest ogólnie istotne w każdej branży. W przypadku AI, ze względu na przytłaczające tempo zmian, warto zwracać szczególną uwagę skupienie się na "sygnale" i pomijaniu "szumu".
+
+*   Prompt Engineering Guide od [OpenAI](https://platform.openai.com/docs/guides/prompt-engineering), [Anthropic](https://docs.anthropic.com/claude/docs/prompt-engineering)
+    
+*   [OpenAI CookBook](https://cookbook.openai.com/)
+    
+*   [OpenAI Research](https://openai.com/research)
+    
+*   [Anthropic Research](https://www.anthropic.com/research)
+    
+*   [Społeczność AI Explained](https://www.youtube.com/@aiexplained-official/videos)
+    
+*   [Generative AI od Google](https://www.cloudskillsboost.google/paths/118)
+    
+
+*   [Stephen Wolfram Writings](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
+    
+*   [ML Papers](https://github.com/dair-ai/ML-Papers-of-the-Week)
+    
+*   [AemonAlgiz](https://www.youtube.com/@AemonAlgiz)
+    
+
+*   [Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
+    
+*   [Andrej Karpathy (ex OpenAI)](https://www.youtube.com/@AndrejKarpathy)
+    
+
+*   [Geoffrey Hinton](https://twitter.com/geoffreyhinton)
+    
+*   [Yann Lecun](https://twitter.com/ylecun)
+    
+*   [CS50 (Harvard)](https://www.youtube.com/@cs50)
+    
+*   [Newsletter Chain of Thought (CEO @ Every)](https://every.to/chain-of-thought)
+    
+*   [Lil'Log (OpenAI)](https://lilianweng.github.io/)
+    
+*   [Radek Osmulski (Nvidia)](https://radekosmulski.com/)
+    
+*   [Riley Goodside](https://twitter.com/goodside)
+    
+*   [Andrew Mayne (OpenAI)](https://andrewmayneblog.wordpress.com/)
+    
+*   [James Briggs (Pinecone)](https://www.youtube.com/@jamesbriggs)
+    
+*   [AI Explained](https://www.youtube.com/@aiexplained-official)
+    
+*   [All About AI](https://www.youtube.com/@AllAboutAI)
+    
+*   [Cognitive Revolution](https://open.spotify.com/show/6yHyok3M3BjqzR0VB5MSyk?si=93e84305d31a48bb)
+    
+*   [Elizabeth M. Reneiris](https://twitter.com/hackylawyER)
+    
+*   [Harrison Chase](https://twitter.com/hwchase17)
+    
+*   [Aakash Gupta](https://twitter.com/aakashg0)
+    
+*   [Georgi Gerganov (llama.cpp)](https://twitter.com/ggerganov)
+    
+*   [Fabric](https://github.com/danielmiessler/fabric/tree/main/patterns) (jakościowe prompty)
+    
+*   [Matthew Berman (modele Open Source)](https://www.youtube.com/@matthew_berman)
+    
+
+  
+
+* * *
+
+ 
+LangChain oferuje rozbudowany interfejs dla różnych modeli (OpenAI/PaLM/Anthropic/Ollama), **co ułatwia ich ewentualne łączenie.** Sama interakcja do złudzenia przypomina tą, znaną z SDK. Mamy tu zatem zainicjowanie. połączenia z modelem oraz faktyczne wysłanie zapytania, w tym przypadku w formacie ChatML (podział system/user/assistant). Poniżej przykład [01\_langchain\_init](https://github.com/i-am-alice/2nd-devs/tree/main/01_langchain_init).
+
+![](https://assets.circle.so/rre4tcrhhuefkvzl708gk49vsdu0)
+
+  
+Istotna różnica pojawia się na etapie **integrowania promptów** oraz **odpowiedzi modelu** z kodem aplikacji, np. poprzez możliwość **zweryfikowania formatu odpowiedzi**, **szablony promptów** i **ich kompozycję**. Pomimo tego, że w przypadku niektórych języków, np. JavaScript z powodzeniem możemy skorzystać np. [Tag Function / Tagged Templates](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates), to warto rozważyć strukturyzowanie promptów z pomocą wbudowanych w LangChain metod.
+
+Poniżej odwzorowałem jeden z promptów, który omawialiśmy w poprzednich lekcjach, wykorzystując Prompt Templates. Dokładnie **taki sam efekt** mógłbym osiągnąć z pomocą Tag Function lub nawet prostym łączeniem ciągów znaków. Jednak tutaj różnica pojawia się w chwili, gdy kod naszej aplikacji staje się bardziej złożony. W związku z podatnością promptów na nawet najmniejsze zmiany, stosowanie mechanizmów umożliwiających **utrzymanie struktury** jest pomocne ([02\_langchain\_format](https://github.com/i-am-alice/2nd-devs/tree/main/02_langchain_format))
+
+![](https://assets.circle.so/lqtrwhmri3gsnyjnzzb06675ilhk)
+
+Podobne mechaniki można stosować także bezpośrednio w automatyzacjach [make.com](http://make.com/) poprzez obecne w nim funkcje i zmienne. Poniżej znajduje się jedno z narzędzi, którymi posługuje się model w celu zarządzania moją listą zadań. Jeśli nie korzystasz z takich narzędzi, to powiem tylko, że sam nie wyobrażam sobie budowania aplikacji łączących się z kilkoma usługami (nierzadko przez OAuth2.0) tylko na swoje potrzeby. Zwyczajnie nie starczyłoby mi na to wszystko czasu, dlatego właśnie wspominam o [make.com](http://make.com/), który świetnie sprawdza się jako uzupełnienie (i nierzadko jako fundament) interakcji z LLM.
+
+![](https://assets.circle.so/t8flku7dhxzd1wwp78kpt3jdx2n3)
+
+Myślę, że widzisz tutaj wyraźnie zmienne, a nawet całe sekcje promptów, które **dynamicznie pojawiają się w jego treści**. To właśnie w tym miejscu znaczenia nabiera **formatowanie promptu** czy **wyraźne wyróżnianie jego poszczególnych sekcji**.
+
+ 
+Wymieniałem ogólne zastosowania Dużych Modeli Językowych, jednak może nie być jasne, jak przekładają się one na faktyczne zastosowanie w codziennym życiu. Pominę jednak te najbardziej oczywiste przykłady, które na co dzień widzimy w Internecie, i skupię się na tych, które jednoznacznie wynikają z **połączenia programowania z AI**.
+
+ 
+Duże Modele Językowe sprawdzają się nie tylko w wymiarze prywatnym, ale przede wszystkim biznesowym. Należy jednak nadal mieć na uwadze fakt, że obecnie na rynku nie ma jeszcze dojrzałych narzędzi, frameworków czy wzorców projektowych pozwalających na swobodne rozwijanie aplikacji łączących kod z LLM. Doskonale obrazuje to slajd z prezentacji [State of GPT](https://youtu.be/bZQun8Y4L2A?t=2244), mówiący m.in. o:
+
+*   Wykorzystywaniu w **niekrytycznych** obszarach pod nadzorem człowieka
+    
+*   Zastosowaniu jako źródło inspiracji lub sugestii
+    
+*   Preferowaniu copilotów / asystentów niż autonomicznych rozwiązań
+    
+
+![](https://assets.circle.so/s8n1w4ij71ytbvyul3d6ny4uj3e0)
+
+  
+Mówiąc o tym bardziej obrazowo, GPT-4 **nie jest jeszcze** **w pełni gotowy** **do zastosowań produkcyjnych** i obecnie sprawdzi się jako ich **uzupełnienie** lub do prywatnych zastosowań. Główne argumenty, które potwierdzają takie nastawienie to:
+
+*   Brak narzędzi do sterowania zachowaniem modelu, na których można polegać. Wynikają z tego różnego rodzaju problemy, sięgające nawet w obszar bezpieczeństwa, ponieważ model może podejmować działania niezgodne z założeniami. Przykładem może być wygenerowanie przez chatbota nieprawdziwej odpowiedzi.
+    
+*   Dostępność API nadal jest niewystarczająca do biznesowych zastosowań wymagających wysokiego SLA. Istnieje jednak opcja dostępu do modeli OpenAI w ramach Microsoft Azure lub poprzez [ChatGPT Enterprise](https://openai.com/blog/introducing-chatgpt-enterprise)
+    
+
+Sam posiadam różne narzędzia wykorzystujące modele OpenAI, które pomagają mi w pracy, ale absolutnie nie nadają się do udostępnienia innym, nietechnicznym użytkownikom. Jako programista, dysponuję wiedzą na temat pracy z modelami oraz w razie potrzeby mogę swobodnie wprowadzać potrzebne zmiany w promptach, oraz w kodzie. W przypadku produkcyjnych zastosowań nie byłoby to już tak proste i przykładowo, utrzymanie stabilności aplikacji stanowiłoby dość duże wyzwanie (aczkolwiek, w praktyce zależy to od realizowanego projektu).
+
+Naturalnie, **nie oznacza to, że zastosowanie GPT-4 w niektórych obszarach produkcyjnych nie jest możliwe**. W praktyce jednak niemal wszystkie obecnie dostępne na rynku produkty, przy bliższym poznaniu, okazują się niedopracowane i, co gorsza, nie realizują oferowanej wartości. Ostatecznie, nie powinno stanowić to dużego zaskoczenia, ponieważ mówimy o zastosowaniu technologii, która zaczęła zdobywać popularność kilkanaście miesięcy temu. Więcej na temat zastosowań produkcyjnych w kontekście biznesowym powiemy w lekcjach związanych z automatyzacją połączoną z AI oraz podczas projektowania własnego asystenta AI.
+
+ 
+LLM mają duży potencjał w kontekście zastosowania ich w obszarze automatyzacji procesów biznesowych oraz rozwoju produktów. W praktyce jednak bardzo **łatwo jest zbudować prototyp**, a dojście do działającego produktu zajmuje dużo czasu. Poza wymienionymi przed chwilą wyzwaniami, wdrożenie rozwiązań AI do istniejących procesów wiąże się z podjęciem wymagających działań. Mowa tutaj między innymi o:
+
+*   Poznaniu samej technologii przez zespół. Zdobywanie wiedzy przez top-level management oraz osoby odpowiedzialne za faktyczne wdrożenie AI zajmuje czas. Obecnie na rynku brakuje wiedzy i jakościowych szkoleń kierowanych nie tylko dla programistów. Poza dostępnością wiedzy, do gry wchodzi jeszcze czas potrzebny na faktyczne zdobycie umiejętności oraz późniejsze praktyczne doświadczenie.
+    
+*   Zazwyczaj wdrożenie rozwiązań AI wymaga zgromadzenia i przetworzenia różnego rodzaju danych (bazy wiedzy, dokumentacje, opisy procesów, standardy itd.), co jest żmudnym i czasochłonnym zajęciem. Zwykle wyzwanie stanowi tutaj **rozproszenie danych w różnych usługach oraz formatach**. Np. odczytanie danych z dokumentów PDF, nawet w połączeniu z AI, nie jest proste. Po zgromadzeniu danych konieczne jest ich przetworzenie i przygotowanie na potrzeby modeli językowych (kategoryzacja, tagowanie, wzbogacanie, dzielenie na mniejsze fragmenty) w sposób umożliwiający ich aktualizację. Nierzadko mówi się, że wdrożenie AI to przede wszystkim praca związana z organizacją danych.
+    
+*   Już na etapie developmentu pojawiają się wyzwania związane z kosztami usług dostawców zarówno modeli (np. OpenAI), jak i zewnętrznych API (np. Qdrant). Rozliczanie w modelu uzależnionym od zużycia generuje dodatkowe koszty dla każdej osoby zaangażowanej w development. Optymalizacja zajmuje czas i wymaga wiedzy związanej nie tylko z projektowaniem promptów, ale także optymalizacji mechanizmów wyszukiwania czy przetwarzania treści.
+    
+*   Aplikacja działająca na produkcji wymaga stałego monitorowania oraz podjęcia dodatkowych kroków związanych z moderowaniem danych wejściowych pod kątem zgodności np. z polityką openai, oraz założeniami naszego oprogramowania (np. nie chcemy, aby czatbot przyjmujący zamówienia był w stanie rozmawiać na inne tematy). Do tego dochodzi także możliwość minimalizowania ryzyka wygenerowania niepoprawnych odpowiedzi (halucynacji modelu) oraz obsługa błędów i przypadków brzegowych.
+    
+*   Rozwój aplikacji wykorzystujących LLM generuje także problemy w związku z wprowadzaniem modyfikacji i budowaniem nowych funkcjonalności. W przeciwieństwie do kodu nie mamy tutaj jeszcze sensownych narzędzi umożliwiających testowanie promptów w celu upewnienia się, że aktualizacja nie wprowadza regresji w aplikacji. Problem ten zaczyna być adresowany poprzez narzędzia takie jak [LangSmith](https://smith.langchain.com/) (jest jeszcze na bardzo wczesnym etapie rozwoju).
+    
+
+Podstawowe źródła na temat zastosowań produkcyjnych można znaleźć [w dokumentacji OpenAI](https://platform.openai.com/docs/guides/safety-best-practices). Jest to jednak wierzchołek góry lodowej, dlatego w miarę możliwości podzielę się własnymi doświadczeniami "z produkcji" na przestrzeni całego kursu AI\_Devs. Chciałbym jednak podkreślić, że nie na wszystkie pytania mamy odpowiedzi (nie tylko jako twórcy kursu, ale nawet OpenAI nie ma rozwiązań np. na prompt injection).
+
+Powyższe punkty mogą pozostawić Cię z wrażeniem, że jakiekolwiek zastosowanie LLM w kodzie produkcyjnym jest niemożliwe. Nie jest to prawda i z powodzeniem LLM sprawdzą się do:
+
+*   Zastosowań wewnętrznych, np. narzędzi obsługiwanych przez osoby posiadające wiedzę na temat pracy z nimi.
+    
+*   Systemach ograniczających dowolność wprowadzanych danych i sposobu prezentowania odpowiedzi. Często wiąże się to z zastosowaniem AI "w tle". Przykładem może być przycisk "dopasuj kolor z AI", który przeanalizuje obraz i wygeneruje dla niego paletę kolorów zgodnie ze zdefiniowaną instrukcją.
+    
+*   Funkcjonalnościach stanowiących wsparcie, niepełniących krytycznej roli oraz realizujących jasno zdefiniowany proces, który łatwo monitorować. Przykładem może być wzbogacanie bądź klasyfikowanie treści lub zaawansowane mechanizmy sugerujące treści na podstawie dopasowań niemożliwych (bądź trudnych) do zrealizowania z pomocą kodu.
+    
+*   Wdrożeniach uwzględniających trenowanie i/lub fine-tuning modeli, w celu wyspecjalizowania ich w bardzo konkretnych zadaniach.
+    
+
+Ostatecznie nikt nie zabrania pełnego, produkcyjnego zastosowania LLM. Scenariusze zarysowane powyżej można do pewnego stopnia adresować lub zgodzić się na kompromisy. Tym bardziej że wiele problemów, które widzimy dzisiaj, niebawem mogą całkowicie zniknąć. Przykładem może być kwestia prywatności danych, którą teraz można zaadresować poprzez plany Enterprise czy modele Open Source. Zamiast czekać na gotowe rozwiązania, można już teraz zdobywać doświadczenie, które okaże się przydatne w przyszłości.
+
+* * *
+

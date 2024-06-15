@@ -1,0 +1,21 @@
+** Jeżeli tylko jest to możliwe, warto to zrobić oraz dodatkowo podkreślić, że generowane odpowiedzi muszą wykorzystywać wiedzę z kontekstu.
+
+Wówczas np. **Niedeterministyczna natura**
+Do prezentowanych przykładów zadań realizowanych przez GPT-4 dołączam linki kierujące do Playground. Strategie radzenia sobie z tym problemem omówimy w późniejszej części AI\_Devs.
+
+Do tego czasu zapamiętaj, że **możesz jedynie sterować zachowaniem modelu, ale nie masz pewności, że wygenerowany rezultat zawsze będzie zgodny z Twoimi założeniami**. **Obliczenia i zadania logiczne**
+Nowsze wersje modeli (np.
+
+GPT-4) . Stały dostęp do możliwości oferowanych przez LLMy, a także przypisanie skrótów klawiszowych do wybranych zadań, pozwala znacznie przyspieszyć pracę. Jeden z przykładów umożliwia czytanie i zapamiętywanie treści stron dodanych do tablicy Feedly, które następnie mogą być wykorzystane w trakcie rozmowy z asystentem AI.
+
+!
+
+GPT-4 domyślnie nie posiada dostępu do Internetu. !
+
+Interakcja z GPT-4, który posiada dostęp do wiedzy na nasz temat (na przykład na podstawie wcześniejszych interakcji), pokazuje prawdziwy potencjał tej technologii. Jak niebawem się przekonasz, **połączenie dużych modeli językowych z kodem, pozwoli Ci adresować obecne ograniczenia modeli oraz połączyć je z zewnętrznymi usługami, znacznie rozszerzając dostępne możliwości. !
+
+To jednak nie oznacza, że nie znamy zastosowań dużych modeli językowych oraz scenariuszy, w których sprawdzają się one wprost genialnie. definicje występujące w różnych dziedzinach są dzięki określeniu roli asystenta postrzegane jednoznacznie).
+
+*   **Transformacje dostarczonych treści**, np.
+
+tłumaczenia, korekty, analizy i podsumowania, uwzględniające kontekst przetwarzanych dokumentów.

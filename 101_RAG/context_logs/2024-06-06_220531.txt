@@ -1,0 +1,34 @@
+obraz i uruchomisz tzw.
+
+kontener.
+
+Zaraz potem Qdrant będzie dostępny pod adresem: , a powiązane z nim pliki trafią do ./qdrant\_storage. ```
+docker pull qdrant/qdrant
+docker run -p 6333:6333 -v $(pwd)/qdrant_storage:/qdrant/storage qdrant/qdrant
+```
+Po uruchomieniu przejdź do przykładu . W przykładzie przechodzimy przez następujące kroki:
+1.
+
+Nawiązanie połączenia z Qdrant (konieczne jest dodanie wartości QDRANT\_URL=http://localhost:6333 do pliku .env)
+    
+2.
+
+Sprawdzenie, czy kolekcja o ustalonej nazwie istnieje
+    
+3. jest jedną z najpopularniejszych baz wektorowych.
+
+Już teraz oferuje najważniejsze funkcjonalności.
+
+Można ją także skonfigurować lokalnie na swoim komputerze oraz własnym serwerze.
+
+Najprostszym sposobem jej uruchomienia, jest skorzystanie z Dockera. W takiej sytuacji zdecydowanie warto rozważyć przeniesienie się do postgreSQL czy MongoDB (według preferencji) oraz np.
+
+Qdrant. W takiej sytuacji zdecydowanie warto rozważyć przeniesienie się do postgreSQL czy MongoDB (według preferencji) oraz np.
+
+Qdrant. I tak korzystam z niej w połączeniu z LangChain, więc ewentualna zmiana na Qdrant czy inną bazę, nie powinna stanowić większego problemu. Obecnie jest on na wczesnym etapie rozwoju, ale warto go obserwować.
+
+*   Interakcja z bazami wektorowymi odbywa się poprzez API.
+
+W naszym przypadku skorzystamy z połączenia LangChain z SDK Qdrant oraz natywnego modułu . W przypadku  mamy już dostępny moduł Qdrant, jednak dla porównania skorzystamy z Pinecone, gdzie sytuacja jest dość prosta, ponieważ po założeniu konta na  musimy pobrać jedynie założyć nowy indeks oraz adres https i klucz API do konta. , RAG) oraz długoterminowej pamięci dzięki połączeniu baz wektorowych (Qdrant / Supabase) oraz klasycznych silników wyszukiwania (Algolia / ElasticSearch).
+
+Przykładem może być .

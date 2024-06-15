@@ -1,0 +1,12 @@
+{
+    "1449": "obraz i uruchomisz tzw.\n\nkontener.\n\nZaraz potem Qdrant b\u0119dzie dost\u0119pny pod adresem: , a powi\u0105zane z nim pliki trafi\u0105\u00a0do ./qdrant\\_storage.",
+    "1450": "```\ndocker pull qdrant/qdrant\ndocker run -p 6333:6333 -v $(pwd)/qdrant_storage:/qdrant/storage qdrant/qdrant\n```\nPo uruchomieniu przejd\u017a do przyk\u0142adu .",
+    "1456": "W przyk\u0142adzie przechodzimy przez nast\u0119puj\u0105ce kroki:\n1.\n\nNawi\u0105zanie po\u0142\u0105czenia z Qdrant (konieczne jest dodanie warto\u015bci QDRANT\\_URL=http://localhost:6333 do pliku .env)\n    \n2.\n\nSprawdzenie, czy kolekcja o ustalonej nazwie istnieje\n    \n3.",
+    "1447": "jest jedn\u0105 z najpopularniejszych baz wektorowych.\n\nJu\u017c teraz oferuje najwa\u017cniejsze funkcjonalno\u015bci.\n\nMo\u017cna j\u0105\u00a0tak\u017ce skonfigurowa\u0107\u00a0lokalnie na swoim komputerze oraz w\u0142asnym serwerze.\n\nNajprostszym sposobem jej uruchomienia, jest skorzystanie z Dockera.",
+    "2532": "W takiej sytuacji zdecydowanie warto rozwa\u017cy\u0107 przeniesienie si\u0119 do postgreSQL czy MongoDB (wed\u0142ug preferencji) oraz np.\n\nQdrant.",
+    "2569": "W takiej sytuacji zdecydowanie warto rozwa\u017cy\u0107 przeniesienie si\u0119 do postgreSQL czy MongoDB (wed\u0142ug preferencji) oraz np.\n\nQdrant.",
+    "2450": "I tak korzystam z niej w po\u0142\u0105czeniu z LangChain, wi\u0119c ewentualna zmiana na Qdrant czy inn\u0105 baz\u0119, nie powinna stanowi\u0107 wi\u0119kszego problemu.",
+    "1446": "Obecnie jest on na wczesnym etapie rozwoju, ale warto go obserwowa\u0107.\n\n*   Interakcja z bazami wektorowymi odbywa si\u0119\u00a0poprzez API.\n\nW naszym przypadku skorzystamy z po\u0142\u0105czenia LangChain z SDK Qdrant oraz natywnego modu\u0142u .",
+    "32": ", RAG) oraz d\u0142ugoterminowej pami\u0119ci dzi\u0119ki po\u0142\u0105czeniu baz wektorowych (Qdrant / Supabase) oraz klasycznych silnik\u00f3w wyszukiwania (Algolia / ElasticSearch).\n\nPrzyk\u0142adem mo\u017ce by\u0107 .",
+    "1465": "W przypadku  mamy ju\u017c\u00a0dost\u0119pny modu\u0142 Qdrant, jednak dla por\u00f3wnania skorzystamy z Pinecone, gdzie sytuacja jest do\u015b\u0107 prosta, poniewa\u017c po za\u0142o\u017ceniu konta na  musimy pobra\u0107 jedynie za\u0142o\u017cy\u0107 nowy indeks oraz adres https i klucz API do konta."
+}

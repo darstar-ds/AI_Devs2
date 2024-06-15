@@ -1,0 +1,225 @@
+
+Myślę, że już widzisz, **jak dużą rolę** w interakcji z modelami odgrywają **dobrze dobrane przykłady**. Nie inaczej jest z kontekstem, czy zasadniczo danymi, które trafiają do kontekstu, samej konwersacji, czy są wprost generowane przez model.
+
+Jedno z pewnych przypuszczeń, którego nie możemy potwierdzić, ale wydaje się w miarę logiczne, sugeruje, że niektóre **wyrażenia**, **frazy**, **słowa kluczowe** czy **sposób wypowiedzi** mogą aktywować konkretne obszary sieci neuronowej, na której oparte są duże modele językowe. Przykładowo, gdy powiemy "Jesteś światowej klasy inżynierem promptów", to **prawdopodobnie** uwaga modelu skieruje się na powiązane z tym faktem zagadnienia.
+
+Świetnym przykładem tego, o czym teraz mówię, jest publikacja "Large Language Models as Optimizers", poruszająca temat **optymalizowania promptów bezpośrednio przez model językowy**. Jednym z **najbardziej skutecznych instrukcji** brzmi tak:
+
+*   **Take a deep breath and work on this problem step-by-step.**
+    
+
+Określenie "Take a deep breath" (weź głęboki oddech) wydaje się nie mieć żadnego związku z modelami językowymi. Jednak takie określenie nierzadko pojawia się np. w sytuacjach, które wymagają od nas **uspokojenia, wysokiej uwagi oraz skupienia i precyzji w podejmowanym działaniu**. Poza tym sama fraza "**Let's break this problem step by step**" zazwyczaj pojawia się **w jakościowych źródłach wiedzy, np. tutorialach czy książkach**. Podkreślam jednak, że są to jedynie przypuszczenia, lecz regularnie spotykam się z nimi w różnych publikacjach, które popierają je faktycznym zwiększeniem skuteczności.
+
+Samo dostarczanie dodatkowych treści (w dowolnej formie) do interakcji z modelem również ma swoje uzasadnienie w charakterystycznych dla ludzi zachowaniach i sposobach myślenia. Chain of Thought (lub też [Train of Thought — Wikipedia](https://en.wikipedia.org/wiki/Train_of_thought)) to jeden z nich. Zapewne kojarzysz sytuację, w której podczas rozmowy pojawiały Ci się w głowie **kolejne, powiązane tematy**. Podobnie jest w przypadku szukania rozwiązania problemu — proces odnalezienia odpowiedzi polega na **przejściu przez zagadnienia, które prowadzą nas do kolejnych**. Należy jednak brać pod uwagę także to, że **Chain of Thought** może nas również prowadzić w niepożądane miejsca i sugerować niepoprawne rozwiązania.
+
+To wszystko ma bezpośrednie przełożenie na pracę z Dużymi Modelami Językowymi. Poniższy przykład pochodzi z publikacji [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903) i oddaję ideę "prowadzenia modelu" przez konkretny schemat myślowy.
+
+![](https://assets.circle.so/884t2huzs34t0dgdbmcsnv0a3n37)
+
+Pomimo tego, że w wielu przypadkach zależy nam na tym, aby model udzielał **krótkiej, treściwej odpowiedzi**, to nie oznacza, że **programistycznie** nie możemy uwzględnić logiki, która **przeprowadzi** lub **pozwoli mu przeprowadzić** proces myślowy, którego rezultatem będzie poprawne rozwiązanie. Rolę czegoś takiego doskonale opisuje Andrej Karpathy na swoim profilu [x.com](http://x.com/), porównując krótkie interakcje do **człowieka, który mówi szybko i nie ma czasu na myślenie**.
+
+![](https://assets.circle.so/lp3f4gf4xb9q46te8mvguhagxbx9)
+
+Celem powyższego wyjaśnienia jest zwrócenie Twojej uwagi na fakt, że **chęć przetwarzania jak najmniejszej liczby tokenów możliwie szybko** może okazać się złym doradcą, szczególnie w przypadku zadań **wymagających złożonego rozumowania**.
+
+Na zakończenie tej lekcji, chciałem jeszcze zwrócić uwagę na pewne **spostrzeżenie**, które wydaje się bardzo trafne i faktycznie okazuje się przydatne przy pracy z Dużymi Modelami Językowymi. Mowa o "[Latent Space Activation](https://github.com/daveshap/latent_space_activation)", które łączy ze sobą praktycznie wszystkie znane nam techniki projektowania promptów i która bezpośrednio nawiązuje do sposobu kompresji informacji danych, jaką wykorzystują sieci neuronowe.
+
+Nie wgłębiając się zbytnio w teorię, jeśli teraz napiszę "Occam's Razor", to jeśli koncepcja ta jest Ci znana, od razu skieruję Twoje myśli w obszar możliwie "najprostszych rozwiązań". Podobnie jest z LLM, gdzie również wiele wskazuje na to, że konkretne pojęcia czy zwroty aktywują powiązany z nimi obszar wiedzy i umiejętności, **wpływając na sposób zrealizowania zadania**.
+
+Przykładami takich określeń, z którymi sam się spotkałem, są:
+
+*   Let's verify step by step
+    
+*   Let's break this down
+    
+*   Let's explain this step by step
+    
+*   Answer using your best guess
+    
+*   Explain your reasoning step-by-step to make sure you've got the right answer
+    
+*   Nazwy mentalnych czy znanych modelowi pojęć i technik
+    
+*   Nawiązania do znanych postaci czy platform (np. styl komentarzy z YouTube)
+    
+*   Nawiązania do konkretnych rodzajów wypowiedzi, charakterystycznych np. dla tutoriali wideo (w których zwykle znajduje się wartościowa, dopracowana wiedza, z którą model miał kontakt)
+    
+
+Poza określeniami mówimy także o technikach "prowadzenia" konwersacji przez konkretne schematy myślowe, co już widzieliśmy na przykładzie, chociażby Tree of Thoughts. Kolejny przykład pochodzi z wyżej wspomnianego repozytorium Davida Shapiro, który nagrał na ten temat także [film na swoim kanale YouTube](https://www.youtube.com/watch?v=N8p6u1OtARs)
+
+  
+
+![](https://assets.circle.so/fhwuyyf8vi8klfdi31lyxksvxery)
+
+  
+To wszystko jeszcze bardziej podkreśla fakt, że jeszcze bardzo mało wiemy na temat interakcji z modelami i dotychczasowe techniki nierzadko są wynikiem przypadku. Dlatego tym bardziej wprost świetnym pomysłem jest eksperymentowanie i eksplorowanie ścieżek, które **wykraczają poza ogólnie przyjęte standardy**.
+
+* * *
+
+ 
+Tworzenie notatek głosowych jest bardzo wygodne, ale wymaga dodatkowej pracy związanej z ich faktycznym przepisywaniem. Większość rozwiązań zdolnych do zamiany audio na tekst działa ze skutecznością na poziomie 90%+. Niestety w tych 10% uwzględniamy **słowa kluczowe i zwroty**, które nierzadko kształtują główny przekaz. Inaczej wygląda to w przypadku modelu Whisper, którego transkrypcje wydają się być perfekcyjne (a przynajmniej do tej pory jego skuteczność na podstawie moich notatek oceniam na 99.5%).
+
+Samo utworzenie notatki głosowej jest stosunkowo proste, bo obecnie już chyba każdy telefon posiada taką funkcjonalność. W przypadku systemu iOS możesz także skorzystać z Siri Shortcuts. Niezależnie od wybranego sposobu, chodzi o **uzyskanie pliku audio**. Tutaj zaznaczam także, że nagranie może pochodzić również z materiału wideo (skrypt wykorzystujący ffmpeg może Ci w tym pomóc).
+
+Następnie potrzebujesz zadbać o to, aby **nagrania audio trafiły automatycznie do skryptu odpowiedzialnego za generowanie transkrypcji z pomocą modelu Whisper**. Można to osiągnąć na różne sposoby. Jednym z nich jest wspomniane makro Shortcuts, które może przesłać nagranie audio do scenariusza [make.com](http://make.com/), ale dokładnie to samo można osiągnąć także z pomocą wiadomości głosowej na Slacku, natomiast taki scenariusz zbudujemy sobie w dalszych lekcjach.
+
+![](https://assets.circle.so/qcjb5cac8ir5hg5czjcgutxmtjz9)
+
+Scenariusz make może po prostu tworzyć transkrypcję **i zapisywać ją w naszej bazie Airtable** (lub dowolnym innym miejscu z którym może skontaktować się przez API). Zanim jednak to się wydarzy, notatka może zostać odpowiednio sformatowana oraz podzielona na sekcje (np. podsumowanie, główne punkty, akcje). Warto jednak zadbać o to, aby **poza zmodyfikowaną treścią, zapisać także oryginał, aby można było się do niego łatwo odwołać**.
+
+![](https://assets.circle.so/96hdsn6gvw3ria9eykgkr6e907ct)
+
+*   ⚡ [Pobierz makro Shortcut](https://www.icloud.com/shortcuts/90028338bbfc4c7a991db87f1e78ad56)
+    
+*   ⚡ [Pobierz blueprint Make.com](https://cloud.overment.com/aidevs_voice-1695287808.json)
+    
+
+[voice\_memo.mp4](https://assets.circle.so/qao09c4hp82jq1tlm9zqj8wqd825)
+
+Jeśli pracujesz w innym systemie niż macOS lub po prostu nie chcesz korzystać z Shortcuts, to możesz skorzystać z Dropbox / Google Drive, aby zautomatyzować proces transkrypcji i formatowania. Wówczas wystarczy jeden dodatkowy scenariusz, który będzie **obserwował wybrany przez Ciebie katalog**, a następnie **przesyłał nowo dodane pliki do scenariusza, który już mamy**. W ten sposób unikniemy duplikowania logiki, co jest także dobrym przykładem pewnego stylu myślenia, który możesz stosować podczas projektowania mechaniki asystenta (i to nie tylko w kontekście no-code, ale przede wszystkim programowania).
+
+Mianowicie, scenariusz, który mamy poniżej faktycznie **obserwuje wybrany katalog na Google Drive**, następnie **pobiera nowo dodany plik** i **przesyła go z pomocą modułu HTTP** na webhook naszego **wcześniejszego scenariusza**.
+
+![](https://assets.circle.so/dntsssf23m5ahoaus1v157jau8ew)
+
+*   ⚡ [Pobierz Blueprint Scenariusza](https://cloud.overment.com/process-1695303035.json)
+    
+
+Konfiguracja powyższej automatyzacji polega więc jedynie na:
+
+1.  Zaimportowaniu blueprintu
+    
+2.  Podłączenie konta Google do modułów Google Drive
+    
+3.  Podmienienie adresu URL w ostatnim module, na adres **webhooka wygenerowanego we wcześniejszym scenariuszu**
+    
+
+To wszystko! Od teraz niezależnie od tego w jakiej formie nagrasz notatkę audio, wystarczy, że prześlesz ją do obserwowanego folderu.
+
+Zanim przejdziemy dalej, chciałbym zwrócić uwagę na kilka rzeczy, które pozwolą Ci wykorzystać powyższą koncepcję oraz wiele innych, nie tylko w sposób, który Ci prezentuję. Otóż możesz pomyśleć o notatkach głosowych jako treści na podstawie której:
+
+*   generowany jest obiekt JSON (podobnie jak w przypadku szybkich notatek Alice), który **bezpośrednio zostaje przesłany do Twojej aplikacji do zadań, kalendarza czy systemu CRM**
+    
+*   pobierane są wybrane treści w ustalonym formacie. Np. lista zakupów, treść wpisu do budżetu domowego czy nawet szkic wiadomości e-mail
+    
+*   formatowanie może być bardzo zaawansowane i uwzględniać nawet kroki, które pozwolą na jej podstawie generować wpisy do mediów społecznościowych
+    
+*   dodane notatki głosowe w kolejnych lekcjach będą mogły trafić do **pamięci długoterminowej Twojego asystenta**
+    
+*   notatki głosowe mogą być wzbogacane dodatkowymi opisami (np. linkami), które trudno jest podyktować. Wystarczy, że dodasz kolejny krok, który pozwoli Ci podać takie dane
+    
+*   przetwarzanie notatek głosowych może odbywać się w połączeniu **z dynamicznym kontekstem** (nawet bardzo prostym, uwzględniającym opisy Twoich projektów), korzystając z technik omawianych w dotychczasowych lekcjach. Wiele z tych wątków będziemy także rozszerzać niebawem
+    
+*   z notatki głosowej mogą być także pobrane **całe listy akcji**, które zrealizują dla Ciebie automatyzacje, skrypty czy po prostu Twój przyszły asystent AI. Warto jednak tutaj albo dopracować prompt, albo (idealnie) weryfikować wygenerowaną listę przed jej wykonaniem
+    
+*   interakcje głosowe mogą być także połączone z Twoimi komunikatorami, w celu wysyłania lub nawet odbierania wiadomości głosowych. Tutaj jednak pamiętaj o tym, że treści trafiają na serwery OpenAI, więc zweryfikuj wcześniej politykę prywatności. Sam korzystam z takiej funkcjonalności na potrzeby rozmowy z Alice i pokażę ją bliżej w ostatnim tygodniu kursu (zobacz obrazek poniżej)
+    
+
+![](https://assets.circle.so/d7q4atg35q7okgkhulni4zh5wz2h)
+
+  
+
+ 
+W lekcji **C01L03** wskazałem popularne techniki promptów oraz źródła, w których możesz znaleźć ich więcej. Miej jednak na uwadze, że nieustannie powstają sposoby interakcji z modelami, jak chociażby ostatnia publikacja "[Large Language Models are Optimizers](https://arxiv.org/abs/2309.03409)", mówiąca o możliwości wykorzystywania LLM do optymalizacji swoich własnych zachowań.
+
+Z programistycznego (lub no-code) punktu widzenia, generowanie odpowiedzi na podstawie **procesu realizowanego przez kilka zapytań** może odbywać się automatycznie, a użytkownicy takiego systemu, mogą widzieć jedynie ostateczną odpowiedź.
+
+Poniżej znajduje się przykład kodu ([**08\_cot**](https://github.com/i-am-alice/2nd-devs/tree/main/08_cot)) prezentującego **natychmiastowe zwrócenie odpowiedzi przez model** (zero-shot) oraz **staranne wyjaśnienie swojego rozumowania (zero-shot chain of thought)**. W tym drugim przypadku **model miał więcej czasu do "namysłu"**, po którym miał **dołączyć separator, a następnie podać wynik w formie liczby**. Dzięki unikatowemu separatorowi mogłem programistycznie pobrać rezultat i wykorzystać go w dalszym fragmencie aplikacji.
+
+![](https://assets.circle.so/doc2kx9qn9sozfjuajx0q5hmn44i)
+
+Na kilkanaście prób, **zero-shot CoT** **generował poprawny wynik za każdym razem** (model GPT-4), podczas gdy zero-shot **mylił się za każdym razem!** Analogicznie, możesz tutaj skorzystać z Chain of Thought, Tree of Thought, czy Reflexion. Oczywiście, Duże Modele Językowe nie są przeznaczone do dokonywania obliczeń, jednak mówimy tutaj o ogólnym zwiększeniu zdolności do logicznego myślenia i starannym generowaniu odpowiedzi.
+
+Tutaj widać, że uzasadnione staje się zastosowanie guardrails, dzięki którym mógłbym się upewnić, że faktycznie otrzymam oczekiwaną przeze mnie odpowiedź w postaci liczby. Nie będziemy tego teraz robić, ale zwracam uwagę na to, **w jaki sposób te wszystkie koncepcje się ze sobą łączą.**
+
+ 
+W "świecie AI" niemal codziennie pojawiają się nowe narzędzia, techniki, publikacje naukowe, czy nawet modele. Takie otoczenie wymaga zmiany niektórych nawyków, a nierzadko dostosowania naszej rutyny związanej z nauką, programowaniem, czy tworzeniem produktów. Dużą różnicę robi także samo **praktyczne zastosowanie AI** w swojej pracy, nawet jeśli ograniczamy się do stosunkowo prostych zadań. Jednak największy wpływ na umiejętność dostosowania się do wysokiego tempa zmian, wydaje się odgrywać **połączenie własnego doświadczenia, osądu, rozumowania, etyki pracy oraz wiedzy na temat ograniczeń i możliwości narzędzi AI**. Mówiąc konkretnie:
+
+*   Czy GPT-4 samodzielnie wdroży nową funkcjonalność w moim produkcie? Nie.
+    
+*   Czy GPT-4 buduje fragmenty tych funkcjonalności? Tak.
+    
+*   Czy GPT-4 napisze za mnie lekcję AI Devs? Nie.
+    
+*   Czy GPT-4 pomaga mi w parafrazie i zwiększeniu czytelności? Tak.
+    
+*   Czy GPT-4 rozwiąże każdy programistyczny problem? Nie.
+    
+*   Czy GPT-4 przyspiesza mi rozwiązywanie programistycznych problemów? Tak.
+    
+*   Czy GPT-4 potrafi rozumieć szeroki kontekst moich projektów? Nie.
+    
+*   Czy GPT-4 potrafi mi eksplorować wybrane obszary moich projektów i planować zmiany? Tak.
+    
+
+GPT-4 samodzielnie osiąga przeciętne wyniki lub wprost nie jest w stanie wykonać wielu zadań. Sam nie jestem w stanie działać tak szybko, jak GPT-4, jednak efekty mojej pracy są nieporównywalnie lepsze niż te, wygenerowane przez AI.
+
+Wniosek jest prosty — największa korzyść płynie z połączenia naszego doświadczenia i umiejętności z LLM. Tylko na czym to połączenie konkretnie polega?
+
+*   Nie oczekuję od modelu, że rozwiąże moje problemy. Oczekuję, że pomoże mi dojść do ich rozwiązania.
+    
+*   Nie oczekuję od modelu, że napisze za mnie całą logikę funkcjonalności, nad którą pracuję. Oczekuję, że pomoże mi w jej fragmentach.
+    
+*   Nie generuję kodu, którego nie jestem w stanie zrozumieć, bo wprowadzenie w nim zmian zajmie mi dłużej niż zbudowanie wszystkiego od podstaw. W zamian poruszam się **na granicy mojej aktualnej kompetencji** (czasem nieznacznie wychodząc poza nią)
+    
+*   Nie dążę do tego, aby AI zwolniło mnie z robienia trudnych rzeczy. Wykorzystuję AI po to, aby **dało mi przestrzeń do ich realizacji**.
+    
+*   Nie opieram swojej nauki na płytkich podsumowaniach generowanych przez GPT-4. Korzystam z podsumowań po to, aby w sposób **dopasowany do mnie** ułatwić sobie zrozumienie wybranych zagadnień.
+    
+*   Nie korzystam z AI, aby generowało za mnie publikowane treści czy wiadomości. Korzystam z AI po to, aby pomagało mi kontrolować merytorykę i jasność przekazu wynikającą ze sposobu formułowania myśli.
+    
+
+Poza **połączeniem z AI** oraz dbaniem o to, aby **korzystać z możliwie najlepszych źródeł wiedzy (wymieniałem je w lekcji C01L01), jakie jestem w stanie znaleźć w Internecie**, poświęcam tak dużo uwagi, jak to możliwe, na **samodzielne testowanie i eksplorowanie dostępnych możliwości**. To, co właśnie mam na myśli, świetnie oddaje fragment rozmowy Andreja Karpathy z Lexem Fridmanem. Podczas niej padła sugestia dla osób początkujących w obszarze Machine Learningu, jednak ma to zastosowanie do wszystkich innych dziedzin. Mianowicie "Początkujący są zwykle skupieni na tym, 'co robić', niż na tym, aby 'robić dużo'". ([źródło](https://www.youtube.com/watch?v=I2ZK3ngNvvI&t=15s)).
+
+![](https://assets.circle.so/vvc3mi4kc4f75hjpg2x01p3zglcl)
+
+Budując integracje z LLM czy innymi narzędziami AI, nie zawsze skupiam się na użyteczności mojego rozwiązania, lecz na szerokim i nierzadko bardzo głębokim eksplorowaniu technologii. Chwilę później okazuje się, że mechaniki, które zastosowałem np. w powiadomieniach głosowych, przydają mi się przy pracy z transkrypcjami wideo, z którymi pracuję, rozwijając asystenta eduweb.
+
+Przykładem prototypu, który sam w sobie posłużył mi tylko do sprawdzenia w praktyce pewnych założeń, jest strumieniowanie tokenów z GPT-4 bezpośrednio do usługi text-to-speech (w tym przypadku ElevenLabs). Poniżej widać fragment długiej konwersacji, podczas której z pomocą Alice wprowadzałem poprawki w mechanice tego prototypu.
+
+Zwróć uwagę, że ze względu na długi wątek, zadbałem o podanie bieżącego kontekstu w postaci kodu, o którym mówię, aby zwiększyć prawdopodobieństwo tego, że uzyskam poprawną odpowiedź.
+
+![](https://assets.circle.so/u4f3temqf7t4yenj5sy4w6o4o4jl)
+
+Zasadniczo, podczas tworzenia **niezależnych prototypów** lub **elementów istniejących aplikacji**, warto zawsze pamiętać o tym, jak model interpretuje dane, które mu przekazujemy.
+
+*   Zarysowanie kontekstu projektu oraz naszego poziomu doświadczenia pozwala na zwiększenie precyzji odpowiedzi.
+    
+*   Dostarczanie fragmentów dokumentacji lub informacji, które pozwalają zarysować kontekst (a jednocześnie nie są to informacje poufne), zmniejsza ryzyko halucynacji oraz zwiększa jakość odpowiedzi.
+    
+*   Ograniczenie zakresu omawianego problemu pozwala na skupienie uwagi modelu tam, gdzie jest to w danej chwili potrzebne.
+    
+*   Posługiwanie się krótkimi fragmentami kodu oraz ograniczanie generowania kodu przez model, ułatwia rozumienie, debugowanie i wprowadzanie zmian.
+    
+*   Restartowanie konwersacji także pozwala sterować uwagą modelu i zmieniać kierunek omawianego rozwiązania.
+    
+*   Zapisywanie historii wiadomości w swojej własnej bazie umożliwia łatwy powrót do wcześniejszych konwersacji, również z pomocą wyszukiwarki.
+    
+
+Naturalnie, Ty **nie musisz** działać w ten sposób. Jednak niewykluczone, że w powyższej wypowiedzi znajdziesz wątki, które z powodzeniem przełożysz na swoją codzienność. Zasadniczo mówimy tutaj przede wszystkim **o faktycznym zastosowaniu GPT-4 w swojej pracy oraz łączeniu swojego doświadczenia z możliwościami AI.**
+
+ 
+Przedstawiając Ci niektóre z realizowanych przeze mnie projektów, mówiłem, że wskazane jest uzyskanie **bezpośredniego dostępu do ustrukturyzowanych danych** (np. baza danych / API). Może się jednak zdarzyć, że nie będziemy mieli wyjścia i konieczne będzie podłączenie się do źródeł o zróżnicowanej strukturze. Jednym z takich źródeł są **treści stron www**.
+
+Zautomatyzowana praca z treściami stron wchodzi w obszar Web Scrapingu, który uznaje się za **szarą strefę** ze względu na prawa do zawartości stron. Zawsze należy mieć to na uwadze i w kontekście komercyjnym pracować ze swoimi własnymi źródłami, lub tych, których licencja na to pozwala. W przypadku zastosowań prywatnych sytuacja jest nieco inna, jednak i tak należy mieć na uwadze polityki prywatności oraz regulaminy serwisów i stron www.
+
+Scrapowanie i parsowanie treści stron www jest **ogromnym wyzwaniem** ze względu na **zróżnicowanie ich struktury** oraz **dynamiczne wczytywanie ich elementów**. W poprzedniej edycji AI\_Devs do odczytywania treści stron wykorzystywaliśmy bibliotekę [unfluff](https://www.npmjs.com/package/unfluff), jednak jej skuteczność nie jest stuprocentowa, choć sama w sobie jest bardzo wygodna. Obecnie możemy stosunkowo łatwo skorzystać z nieco bardziej zaawansowanych narzędzi, które dają nam większą kontrolę. Mowa o Cheerio, Puppeteer czy Playwright, do których możesz podłączyć się samodzielnie, lub przez dostępne klasy w LangChain. Rozwijają się także usługi takie jak [exa.ai](https://exa.ai/), [brave search api](https://brave.com/search/api/) czy [ScrappingBee](https://scrapingbee.com/).
+
+Cheerio pracuje bezpośrednio na pobranej zawartości HTML strony, co może się przydać w przypadku prostych struktur. Puppeteer i Playwright **wykorzystują Chromium do interakcji ze stronami**, co wymaga więcej zasobów, ale daje bardzo szerokie możliwości automatyzacji. Podstawowe zastosowanie **loadera** z Puppeteer przedstawiam w przykładzie [**12\_web**](https://github.com/i-am-alice/2nd-devs/tree/main/12_web).
+
+UWAGA: Puppeteer warto zainstalować z pomocą polecenia **npm** lub **pnpm**.
+
+![](https://assets.circle.so/xkefjcp0uxs6an7dhkypdy6o6wcr)
+
+Zwróć uwagę na to, że **nie pobieram całej treści strony**, tylko skupiam się na jej fragmencie, a konkretnie na selektorze **.main**. W celu pozbycia się niepotrzebnych tagów HTML, a jednocześnie utrzymania struktury nagłówków, formatowania, obrazków i linków, **transformuję HTML do składni Markdown**.
+
+Rezultat jest prawie zgodny z moim oczekiwaniem, jednak adresy podstron **niepotrzebnie zużywają tokeny**, a w dodatku istnieje pewne ryzyko, że model niepoprawnie by je przepisał w trakcie wypowiedzi. Dlatego w dalszej części tego przykładu, **wykorzystuję wyrażenia regularne** oraz **podmianę treści**, aby **adresy URL zostały zapisane jako metadane**, a **w treści pojawiły się placeholdery**.
+
+![](https://assets.circle.so/qbven3ijc73kzqcfm4u4l30ubyx5)
+
+Wówczas otrzymujemy dokument, który może już z powodzeniem trafić do kontekstu LLM. Oczywiście dla dłuższych treści konieczne byłoby dalsze przetwarzanie, jednak w tym momencie możemy się zatrzymać.
+
+![](https://assets.circle.so/23rid7kt0bbp63e790zjr067g8in)
+
+W związku z charakterystyką Web Scrapingu oraz **różnym poziomem merytorycznym** stron www, blogów itd., zauważyłem, że warto **doprecyzować to, z jakimi źródłami integruje się nasza aplikacja**. W przypadku mojej wersji Alice są to głównie **dokumentacje** oraz **blogi**, które czytam. Czasem stanowi to pewne ograniczenie, jednak daje nam to większą kontrolę oraz przestrzeń do optymalizacji, ponieważ nawet przykład powyżej pokazuje, że zamknięta lista stron **pozwala zawężać sposób przeszukiwania jej treści** i tym samym oszczędzać tokeny.
+

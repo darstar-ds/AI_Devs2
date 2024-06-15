@@ -1,0 +1,162 @@
+Jeśli film nie wyświetla się poprawnie, tutaj [wersja YouTube](https://youtu.be/IGRB0tRINZY)
+
+* * *
+
+Ta lekcja będzie nieco luźniejsza od pozostałych, ponieważ jej celem jest zarysowanie **możliwie szerokiego horyzontu** możliwości dużych modeli językowych. Znajdziesz w niej zatem "jedynie" opisy oraz różne wskazówki dotyczące pracy z modelami. **Wdrożeniem wymienionych mechanik zajmiemy się w dalszej części kursu**.
+
+Na tej podstawie łatwiej będzie Ci decydować, które mechaniki zastosować w swojej pracy. Potraktuj więc tę lekcję jako sesję inspiracji oraz spróbuj przenieść (i modyfikować) prezentowane przykłady na swoją codzienność.
+
+* * *
+
+Rozumienie oraz generowanie treści przez LLM otwiera przed nami różne ścieżki zastosowania AI w swojej codzienności, kontekście zawodowym i biznesowym. Pomimo tego, główna komunikacja firm takich jak OpenAI, Microsoftu czy Google nierzadko opiera się na prostych aktywnościach takich jak **podsumowania** i **rozwijania** dokumentów, czy maili. Z jednej strony rozumiem konieczność prezentowania prostych przykładów dla ogółu społeczeństwa. Z drugiej, nie jest dla mnie jasne, dlaczego w sieci tak rzadko spotykam zastosowania wykraczające poza banalne przykłady z ChatGPT.
+
+Z drugiej strony, gdy bardziej zaawansowane zastosowania się pojawiają, to zwykle obecny rozwój LLM nie pozwala ich wprost przenieść na naszą codzienność. Przykładem może być [prezentacja OpenAI](https://youtu.be/outcGtbnMuQ?t=992) prezentująca możliwość przeniesienia szkicu strony Internetowej na funkcjonalny kod. I choć pobudziło to wyobraźnię oglądających (również moją), to w praktyce nigdy w ten sposób nie uzyskałem satysfakcjonującego rezultatu. Nie zmienia to jednak faktu, że z modeli Vision korzystam praktycznie każdego dnia.
+
+Zatem istnieje znaczna różnica pomiędzy komunikatami marketingowymi oraz ogólnymi rekomendacjami, które zwykle skierowane są do szerokiego grona odbiorców, a codziennym zastosowaniem. Podobnie też istnieje przepaść pomiędzy "prototypem" a produkcyjnym rozwiązaniem, czego możemy doświadczyć na co dzień.
+
+Aby skutecznie posługiwać się LLM w kodzie czy automatyzacjach, konieczne jest więc uchwycenie nie tylko skupionej na detalach perspektywy, lecz uchwycenia szerokiego obrazu możliwości, które mamy do dyspozycji dziś oraz które pojawią się w przyszłości.
+
+ 
+W "świecie AI" niemal codziennie pojawiają się nowe narzędzia, techniki, publikacje naukowe, czy nawet modele. Takie otoczenie wymaga zmiany niektórych nawyków, a nierzadko dostosowania naszej rutyny związanej z nauką, programowaniem, czy tworzeniem produktów. Dużą różnicę robi także samo **praktyczne zastosowanie AI** w swojej pracy, nawet jeśli ograniczamy się do stosunkowo prostych zadań. Jednak największy wpływ na umiejętność dostosowania się do wysokiego tempa zmian, wydaje się odgrywać **połączenie własnego doświadczenia, osądu, rozumowania, etyki pracy oraz wiedzy na temat ograniczeń i możliwości narzędzi AI**. Mówiąc konkretnie:
+
+*   Czy GPT-4 samodzielnie wdroży nową funkcjonalność w moim produkcie? Nie.
+    
+*   Czy GPT-4 buduje fragmenty tych funkcjonalności? Tak.
+    
+*   Czy GPT-4 napisze za mnie lekcję AI Devs? Nie.
+    
+*   Czy GPT-4 pomaga mi w parafrazie i zwiększeniu czytelności? Tak.
+    
+*   Czy GPT-4 rozwiąże każdy programistyczny problem? Nie.
+    
+*   Czy GPT-4 przyspiesza mi rozwiązywanie programistycznych problemów? Tak.
+    
+*   Czy GPT-4 potrafi rozumieć szeroki kontekst moich projektów? Nie.
+    
+*   Czy GPT-4 potrafi mi eksplorować wybrane obszary moich projektów i planować zmiany? Tak.
+    
+
+GPT-4 samodzielnie osiąga przeciętne wyniki lub wprost nie jest w stanie wykonać wielu zadań. Sam nie jestem w stanie działać tak szybko, jak GPT-4, jednak efekty mojej pracy są nieporównywalnie lepsze niż te, wygenerowane przez AI.
+
+Wniosek jest prosty — największa korzyść płynie z połączenia naszego doświadczenia i umiejętności z LLM. Tylko na czym to połączenie konkretnie polega?
+
+*   Nie oczekuję od modelu, że rozwiąże moje problemy. Oczekuję, że pomoże mi dojść do ich rozwiązania.
+    
+*   Nie oczekuję od modelu, że napisze za mnie całą logikę funkcjonalności, nad którą pracuję. Oczekuję, że pomoże mi w jej fragmentach.
+    
+*   Nie generuję kodu, którego nie jestem w stanie zrozumieć, bo wprowadzenie w nim zmian zajmie mi dłużej niż zbudowanie wszystkiego od podstaw. W zamian poruszam się **na granicy mojej aktualnej kompetencji** (czasem nieznacznie wychodząc poza nią)
+    
+*   Nie dążę do tego, aby AI zwolniło mnie z robienia trudnych rzeczy. Wykorzystuję AI po to, aby **dało mi przestrzeń do ich realizacji**.
+    
+*   Nie opieram swojej nauki na płytkich podsumowaniach generowanych przez GPT-4. Korzystam z podsumowań po to, aby w sposób **dopasowany do mnie** ułatwić sobie zrozumienie wybranych zagadnień.
+    
+*   Nie korzystam z AI, aby generowało za mnie publikowane treści czy wiadomości. Korzystam z AI po to, aby pomagało mi kontrolować merytorykę i jasność przekazu wynikającą ze sposobu formułowania myśli.
+    
+
+Poza **połączeniem z AI** oraz dbaniem o to, aby **korzystać z możliwie najlepszych źródeł wiedzy (wymieniałem je w lekcji C01L01), jakie jestem w stanie znaleźć w Internecie**, poświęcam tak dużo uwagi, jak to możliwe, na **samodzielne testowanie i eksplorowanie dostępnych możliwości**. To, co właśnie mam na myśli, świetnie oddaje fragment rozmowy Andreja Karpathy z Lexem Fridmanem. Podczas niej padła sugestia dla osób początkujących w obszarze Machine Learningu, jednak ma to zastosowanie do wszystkich innych dziedzin. Mianowicie "Początkujący są zwykle skupieni na tym, 'co robić', niż na tym, aby 'robić dużo'". ([źródło](https://www.youtube.com/watch?v=I2ZK3ngNvvI&t=15s)).
+
+![](https://assets.circle.so/vvc3mi4kc4f75hjpg2x01p3zglcl)
+
+Budując integracje z LLM czy innymi narzędziami AI, nie zawsze skupiam się na użyteczności mojego rozwiązania, lecz na szerokim i nierzadko bardzo głębokim eksplorowaniu technologii. Chwilę później okazuje się, że mechaniki, które zastosowałem np. w powiadomieniach głosowych, przydają mi się przy pracy z transkrypcjami wideo, z którymi pracuję, rozwijając asystenta eduweb.
+
+Przykładem prototypu, który sam w sobie posłużył mi tylko do sprawdzenia w praktyce pewnych założeń, jest strumieniowanie tokenów z GPT-4 bezpośrednio do usługi text-to-speech (w tym przypadku ElevenLabs). Poniżej widać fragment długiej konwersacji, podczas której z pomocą Alice wprowadzałem poprawki w mechanice tego prototypu.
+
+Zwróć uwagę, że ze względu na długi wątek, zadbałem o podanie bieżącego kontekstu w postaci kodu, o którym mówię, aby zwiększyć prawdopodobieństwo tego, że uzyskam poprawną odpowiedź.
+
+![](https://assets.circle.so/u4f3temqf7t4yenj5sy4w6o4o4jl)
+
+Zasadniczo, podczas tworzenia **niezależnych prototypów** lub **elementów istniejących aplikacji**, warto zawsze pamiętać o tym, jak model interpretuje dane, które mu przekazujemy.
+
+*   Zarysowanie kontekstu projektu oraz naszego poziomu doświadczenia pozwala na zwiększenie precyzji odpowiedzi.
+    
+*   Dostarczanie fragmentów dokumentacji lub informacji, które pozwalają zarysować kontekst (a jednocześnie nie są to informacje poufne), zmniejsza ryzyko halucynacji oraz zwiększa jakość odpowiedzi.
+    
+*   Ograniczenie zakresu omawianego problemu pozwala na skupienie uwagi modelu tam, gdzie jest to w danej chwili potrzebne.
+    
+*   Posługiwanie się krótkimi fragmentami kodu oraz ograniczanie generowania kodu przez model, ułatwia rozumienie, debugowanie i wprowadzanie zmian.
+    
+*   Restartowanie konwersacji także pozwala sterować uwagą modelu i zmieniać kierunek omawianego rozwiązania.
+    
+*   Zapisywanie historii wiadomości w swojej własnej bazie umożliwia łatwy powrót do wcześniejszych konwersacji, również z pomocą wyszukiwarki.
+    
+
+Naturalnie, Ty **nie musisz** działać w ten sposób. Jednak niewykluczone, że w powyższej wypowiedzi znajdziesz wątki, które z powodzeniem przełożysz na swoją codzienność. Zasadniczo mówimy tutaj przede wszystkim **o faktycznym zastosowaniu GPT-4 w swojej pracy oraz łączeniu swojego doświadczenia z możliwościami AI.**
+
+ 
+Na początku powiedziałem, że nie będziemy omawiać technik projektowania promptów, których opisy i przykłady łatwo znajdziesz w sieci. Musisz jednak wiedzieć, czego szukać. Oto lista, która Ci w tym pomoże:
+
+*   **Zero-shot Prompting** polega na zdolności modelu do wykonania zadania na podstawie prostej instrukcji, która nie zawiera przykładów
+    
+*   **One-shot / Few-shot Prompting** polega na podawaniu przykładów prezentujących oczekiwane zachowanie modelu. Omówiliśmy to powyżej.
+    
+*   **Chain of Thought** polega na prowadzeniu modelu przez ciąg myślowy z pomocą wiedzy dostarczonej przez nas lub wygenerowanej przez model. Przykładowo szukając odpowiedzi na nasze pytanie, możemy opisać sytuację w której się znajdujemy oraz kroki, które już podjęliśmy.
+    
+*   **Zero-shot Chain of Thought** polega użyciu wyrażenia "think step by step" w którego wyniku model **wyjaśni swoje rozumowanie** przechodząc przez kolejne kroki, które **zwiększają prawdopodobieństwo wygenerowania poprawnej odpowiedzi**
+    
+*   **Reflexion** polega na użyciu wyrażenia np. "let's verify this step by step" w celu **zweryfikowania odpowiedzi wygenerowanej przez model**. Zasadniczo chodzi o to, aby model **samodzielnie** znalazł ewentualne błędy w swoim rozumowaniu lub potwierdził swoją dotychczasową odpowiedź
+    
+*   **Tree of Thoughts** polega na **wygenerowaniu możliwych scenariuszy**, **pogłębieniu ich**, **wybraniu najbardziej prawdopodobnych** i **udzieleniu odpowiedzi**. Łatwo zauważyć, że wówczas generowanie odpowiedzi trwa dłużej, jednak według [tej publikacji](https://arxiv.org/abs/2305.10601) dla pewnego zestawu zadań, skuteczność modelu wzrosła z 4% (Chain of Thought) do 74%!
+    
+*   Bonus: **SmartGPT** to technika rozwijana przez twórcę kanału [https://www.youtube.com/@aiexplained-official](https://www.youtube.com/@aiexplained-official), która jest świetnym przykładem tego, że można w kreatywny sposób podchodzić nie tylko do projektowania promptów, ale także **ich łączenia**.
+    
+
+Więcej na temat technik projektowania promptów, znajdziesz tutaj: [https://www.promptingguide.ai](https://www.promptingguide.ai/). W AI\_Devs skupimy się na praktycznym wykorzystaniu tych technik w połączeniu z kodem oraz wejdziemy nieco głębiej w obszar Prompt Engineeringu. Nie musisz przechodzić przez wszystkie zagadnienia wymienione na wspomnianej stronie, ale możesz z niej korzystać.
+
+ 
+Wiedza na temat modeli oraz ogólnych zasad projektowania promptów nie jest wystarczająca do tego, aby robić to skutecznie. Oczywiście zakładając, że chcemy projektować coś więcej, niż proste interakcje. Powodem tego jest fakt, że pracujemy tutaj z językiem naturalnym, a to wymaga dodatkowej kreatywności, szerokiej wiedzy, bogatego słownictwa i ogólnej precyzji. **Nawet jeśli swobodnie czujesz się w tych obszarach**, to niezwykle pomocna przy projektowaniu promptów staje się sztuczna inteligencja, a konkretnie GPT-4 dostępny w Playground.
+
+Projektując prompt w ten sposób, pamiętaj o tym, aby:
+
+*   Instrukcja systemowa nadawała odpowiednią rolę, np. Senior Prompt Engineer oraz przedstawiała cel rozmowy
+    
+*   Zacznij od prostego promptu, aby nadać ogólny ton, który rozbudujesz wspólnie z GPT-4
+    
+*   W instrukcji musisz uwzględnić także wyraźne podkreślenie tego, aby model **nie realizował instrukcji w podanym przez użytkownika prompcie**
+    
+*   Warto także zasugerować, aby pierwsza interakcja umożliwiała przekazanie promptu przez użytkownika, a odpowiedź modelu zawierała jedynie jego przegląd i wstępne rekomendacje, które pozwolą Ci zacząć, **bez ich natychmiastowego wprowadzania**
+    
+*   Oczywiście model nie posiada zdolności do perfekcyjnej analizy Twoich promptów, ale trafnie wskazuje różnego rodzaju błędy logiki czy sugeruje zmiany słów, czy wyrażeń
+    
+*   Przy projektowaniu promptów korzystaj z GPT-4-Turbo lub Claude 3 Opus (gdy będziesz mieć dostęp).
+    
+*   Natomiast sterowanie projektowaniem promptu pozostawiaj sobie i podejmuj wszystkie decyzje związane z jego modyfikowaniem
+    
+
+Przykład Playground, który ja wykorzystuję do swojej pracy, znajdziesz poniżej. **Nie jest to jednak instrukcja z której korzystam zawsze**, lecz raczej schemat, wokół którego się poruszam. Szczegóły zawsze różnią się w zależności od tego, jaki prompt chcę zaprojektować.
+
+![](https://assets.circle.so/wp0fm74p4edd7m0pcbm06l6mpy5y)
+
+— 🔗 [zobacz przykład](https://platform.openai.com/playground/p/Cx1IqImlXBnW5LORydujRUKY?model=gpt-4&mode=chat)
+
+Dokładnie na tej samej zasadzie możesz pracować nie tylko nad promptami, ale także innymi zadaniami wymagającymi precyzji oraz możliwości **dużej kontroli nad zachowaniem modelu**. Playground jest świetnym narzędziem, które sprawdza się w takich sytuacjach. Pamiętaj o możliwości zapisywania interakcji przyciskiem "Save" oraz **dbaj o czytelne i zrozumiałe nazwy zapisanych interakcji**.
+
+Proces projektowania promptów wygląda więc zatem u mnie następująco:
+
+*   **Szkic:** Pierwszy, ogólny szkic, mający na celu rozpoznanie zachowania modelu dla konkretnego zadania. Na tym etapie pomijam kwestię optymalizacji i skupiam się na dojściu do celu.
+    
+*   **Weryfikacja:** Drugi etap polega na przygotowaniu zestawów danych weryfikujących zarówno najbardziej prawdopodobne zastosowania, jak i te, niemal absurdalne, które przyjdą mi do głowy, mające na celu całkowicie zaburzyć działanie promptu. Uwzględniam tutaj także **zachowanie promptu dla większych zestawów danych**, np. obszernego kontekstu lub dłuższej konwersacji
+    
+*   **Uruchomienie:** Trzeci etap zależy od przeznaczenia promptu. Zakładając, że mówimy o przetwarzaniu dokumentów, to podłączam kilka **krótszych** plików i sprawdzam, jak wyglądają efekty. Na tym etapie zwykle od razu wprowadzam jakieś poprawki.
+    
+*   **Brainstorm:** Wspólnie z GPT-4, korzystając z Playground przeprowadzam analizę na podstawie moich obserwacji, sugestii modelu oraz moich przemyśleń. Gdy widzę, że GPT-4 rozumie działanie mojego promptu, przechodzimy do wykrycia nieścisłości czy zastosowania lepszych wyrażeń. Na tym etapie nierzadko dochodzi także do **optymalizacji** pod kątem długości promptu. Podczas tego etapu nierzadko podążam za sugestiami GPT-4, natomiast i tak **ostateczna decyzja pozostaje po mojej stronie**
+    
+*   **Iteracja:** Wracam do punktu drugiego i kontynuuję proces do osiągnięcia pożądanych rezultatów oraz poczucia, że "moja praca jest tutaj zrobiona". Nierzadko w kolejnych iteracjach przełączam prompt na słabsze, ale szybsze modele w wersji 3.5 i jeśli to możliwe, pozostaję przy nich w celu optymalizacji kosztów.
+    
+
+Oczywiście możesz opracować swój własny proces. Sam nie stosuję jeszcze testów automatycznych moich promptów, aczkolwiek zdarza mi się wykonywać proste skrypty przechodzące przez zestaw danych testowych. Jeśli rezultatem działania jest wynik, który mogę zweryfikować programistycznie (np. wygenerowanym przez GPT-4 wyrażeniem regularnym), to oczywiście to robię.
+
+* * *
+
+ 
+W lekcji **C01L03** wskazałem popularne techniki promptów oraz źródła, w których możesz znaleźć ich więcej. Miej jednak na uwadze, że nieustannie powstają sposoby interakcji z modelami, jak chociażby ostatnia publikacja "[Large Language Models are Optimizers](https://arxiv.org/abs/2309.03409)", mówiąca o możliwości wykorzystywania LLM do optymalizacji swoich własnych zachowań.
+
+Z programistycznego (lub no-code) punktu widzenia, generowanie odpowiedzi na podstawie **procesu realizowanego przez kilka zapytań** może odbywać się automatycznie, a użytkownicy takiego systemu, mogą widzieć jedynie ostateczną odpowiedź.
+
+Poniżej znajduje się przykład kodu ([**08\_cot**](https://github.com/i-am-alice/2nd-devs/tree/main/08_cot)) prezentującego **natychmiastowe zwrócenie odpowiedzi przez model** (zero-shot) oraz **staranne wyjaśnienie swojego rozumowania (zero-shot chain of thought)**. W tym drugim przypadku **model miał więcej czasu do "namysłu"**, po którym miał **dołączyć separator, a następnie podać wynik w formie liczby**. Dzięki unikatowemu separatorowi mogłem programistycznie pobrać rezultat i wykorzystać go w dalszym fragmencie aplikacji.
+
+![](https://assets.circle.so/doc2kx9qn9sozfjuajx0q5hmn44i)
+
+Na kilkanaście prób, **zero-shot CoT** **generował poprawny wynik za każdym razem** (model GPT-4), podczas gdy zero-shot **mylił się za każdym razem!** Analogicznie, możesz tutaj skorzystać z Chain of Thought, Tree of Thought, czy Reflexion. Oczywiście, Duże Modele Językowe nie są przeznaczone do dokonywania obliczeń, jednak mówimy tutaj o ogólnym zwiększeniu zdolności do logicznego myślenia i starannym generowaniu odpowiedzi.
+
+Tutaj widać, że uzasadnione staje się zastosowanie guardrails, dzięki którym mógłbym się upewnić, że faktycznie otrzymam oczekiwaną przeze mnie odpowiedź w postaci liczby. Nie będziemy tego teraz robić, ale zwracam uwagę na to, **w jaki sposób te wszystkie koncepcje się ze sobą łączą.**
+
